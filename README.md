@@ -97,15 +97,15 @@ Write a C program to perform addition and subtraction of two numbers using funct
 
 ## ALGORITHM:
 
-1. Input two numbers, say num1 and num2, from the user.
-2. Create a function add(int a, int b) that:
+1. Input two numbers, say n1 and n2, from the user.
+2. Create a function add(int num1, int num2) that:
      Takes two integers as arguments.
      Returns the sum of the two numbers.
-3. Create a function subtract(int a, int b) that:
+3. Create a function subtract(int num1, int num2) that:
      Takes two integers as arguments.
      Returns the difference of the two numbers.
-4. Call the add function with num1 and num2 and store the result in sum.
-5. Call the subtract function with num1 and num2 and store the result in diff.
+4. Call the add function with n1 and n2 and store the result in sum.
+5. Call the subtract function with n1 and n2 and store the result in diff.
 6. Print the sum and diff.
 
 ## PROGRAM:
@@ -151,17 +151,17 @@ Write a c program to find the sum of odd digits using do while loop in a given r
 
 ## ALGORITHM:
 
-1. Input two integers M and N from the user (range).
-2. Initialize sum = 0 to store the sum of odd digits.
-3. Set a variable i = M.
-4. Do the following while i <= N:
-5.   Initialize temp = i to extract digits.
-       Do the following while temp > 0:
-       Extract the last digit: digit = temp % 10.
-         If digit is odd (digit % 2 != 0), add it to sum.
-         Remove the last digit: temp = temp / 10.
-       Increment i by 1.
-6. Print the sum of all odd digits in the range.
+1. Start
+2. Input the starting number (start) and ending number (end) from the user.
+3. Initialize a variable sum = 0 to store the sum of odd numbers.
+4. Initialize a loop variable i = start.
+5. Check if i is even:
+         If i % 2 == 0, increment i by 1 to make it odd.
+6. Do the following while i <= end:
+         Add the value of i to sum.
+         Increment i by 2 to move to the next odd number.
+7. After the loop ends, print the value of sum.
+8. Stop
 
 ## PROGRAM:
 ~~~
@@ -202,14 +202,18 @@ To write a C program that calculates the factorial of a given number using a use
 ## ALGORITHM:
 
 1. Start
-2. Declare the function fact().
-3. In the main() function, call the fact() function.
-4. In fact() function:
-   a. Declare variables i, N, and fact (initialized to 1).
-   b. Read an integer N from the user.
-   c. Use a for loop from 1 to N: i. Multiply fact by i in each iteration. 
-   d. After the loop, print the factorial value.
-5. End
+2. Input an integer n from the user.
+3. Create a user-defined function factorial(int num) that:
+
+      Initializes fact = 1.
+
+      Uses a loop from 1 to num to multiply fact by each integer.
+
+      Returns the value of fact.
+
+4. Call the function factorial(n) from main() and store the result.
+5. Print the factorial of n.
+6. Stop
 
 ## PROGRAM:
 ~~~
