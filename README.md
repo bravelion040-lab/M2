@@ -143,7 +143,7 @@ Thus the program to perform addition and subtraction of two numbers using functi
  
 
 
-# EX-09-Use For Loop
+# EX-09-Use do while Loop
 
 ## AIM:
 
